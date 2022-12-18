@@ -6,7 +6,7 @@ const cors = require('cors');
 const http = require('http');
 const bodyParser = require('body-parser');
 const port = 8080;
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 var connection = mysql.createConnection({
   host     : process.env.MYSQL_HOST,
